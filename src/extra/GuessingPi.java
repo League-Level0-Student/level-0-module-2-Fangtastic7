@@ -34,10 +34,12 @@ public class GuessingPi {
 			// 6. Compare the user's input to the next digit to your pi variable
 			// (look at step 3 for a clue).
 			// HINT: use charAt(0) to get 1st char of user input String
-			char guess = input.charAt(0);
-			if(guess ==0) {
+			if(input.isEmpty()) {
 				JOptionPane.showMessageDialog(null, "You must enter a number!");
 			}
+			else {
+			char guess = input.charAt(0);
+			
 			if (guess == pi.charAt(4 + p)) {
 				JOptionPane.showMessageDialog(null, "correct!");
 				break;
@@ -53,6 +55,7 @@ public class GuessingPi {
 			if(wrong == 3) {
 				JOptionPane.showMessageDialog(null, "Game Over!");
 				System.exit(0);
+			}
 			}
 		}
 	}
