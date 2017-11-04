@@ -12,6 +12,7 @@ public class Validation {
 
 		// 1. OPTIONAL: Watch the first 2 minutes of this movie: http://vimeo.com/2485018
 		
+		for(int i=0;i<10;i++) {
 		int randomNumber = new Random().nextInt(5);
 		
 		// 2. On paper, write all the numbers that get printed when you run this class 10 times
@@ -19,7 +20,21 @@ public class Validation {
 		System.out.println(randomNumber);
 
 		// 3. Use each value of randomNumber to give the user a random compliment.
-
+		
+			if(randomNumber==1) {
+			System.out.println("You are amazing!");
+			}
+			else if(randomNumber==2) {
+				System.out.println("You are awesome!");
+			}
+			else if(randomNumber==3) {
+				System.out.println("You are the best!");
+			}
+			else {
+				System.out.println("You are very talented!");
+			}
+			
+		}
 		// 4. Repeat all the code above 10 times
 		
 		// 5. Find someone to test out your program. They will like it :)

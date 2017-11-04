@@ -27,25 +27,8 @@ public class StringMethods1 {
 		//    Print the char's position to the console.
 		//    EXAMPLE: if your string is "abc" and you are searching 
 		//             for char 'b', then print "b is at index 1"
-			for(int i=0;i<5;i++) {
-				String index = JOptionPane.showInputDialog("What character do you want to know in the string?");
-				int num = Integer.parseInt(index);
-				if(num==bob.charAt(0)){
-					
-					System.out.println(bob.charAt(0));
-					}
-				else if(num==bob.charAt(1)) {
-					System.out.println(bob.charAt(1));
-				}
-				else if(num==bob.charAt(2)) {
-					System.out.println(bob.charAt(2));
-				}
-				else if(num==bob.charAt(3)) {
-					System.out.println(bob.charAt(3));
-				}
-				else {
-					JOptionPane.showMessageDialog(null, "Not a character!");
-				}
+			for(int i=0; i<bob.length();i++) {
+				
 			}
 		
 	}
